@@ -1,0 +1,17 @@
+# Operációs rendszer fájljai
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Szerkesztő fájljai
+.vscode/
+.idea/
+*.swp
+*~
+
+# Backup fájlok
+*.bak
+*.tmp
+
+# Log fájlok
+*.log
