@@ -1,0 +1,379 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.kerdoiv-header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 50px 30px 40px 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.kerdoiv-header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.4em;
+    display: inline-block;
+    padding: 5px 25px;
+    border-bottom: 3px solid #f1c40f;
+}
+
+.kerdoiv-header h2 {
+    margin: 10px 0 20px 0;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #ecf0f1;
+}
+
+.bevezetes {
+    max-width: 700px;
+    margin: 15px auto 0 auto;
+    color: #ecf0f1;
+    font-size: 1em;
+}
+
+.vissza-nav {
+    background: white;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.vissza-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.vissza-nav ul li {
+    display: inline-block;
+}
+
+.vissza-nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.vissza-nav ul li a:hover {
+    background-color: #ecf0f1;
+    color: #3498db;
+    border-bottom-color: #3498db;
+}
+
+.vissza-nav ul li a.aktiv {
+    color: #3498db;
+    border-bottom-color: #3498db;
+    background-color: #ecf0f1;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.kerdoiv {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 0 0 25px 0;
+    background-color: #fafbfc;
+}
+
+legend {
+    background: #3498db;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kerdes {
+    margin: 20px 0 25px 0;
+    padding: 15px 18px;
+    background: white;
+    border-left: 4px solid #3498db;
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.kerdes:hover {
+    border-left-color: #2980b9;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+}
+
+.kerdes-cim {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.szam {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.85em;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.radio-csoport,
+.checkbox-csoport {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.radio-csoport label,
+.checkbox-csoport label {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: #ecf0f1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: normal;
+    user-select: none;
+}
+
+.radio-csoport label:hover,
+.checkbox-csoport label:hover {
+    background: #d6e0e3;
+    transform: translateY(-1px);
+}
+
+.radio-csoport input[type="radio"],
+.checkbox-csoport input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 14px;
+    border: 2px solid #ecf0f1;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: white;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+input[type="text"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #ecf0f1;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #2c3e50;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #ecf0f1;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #2c3e50;
+    transition: border-color 0.3s;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.gombok {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.gomb {
+    display: inline-block;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.gomb-kuldes {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+.gomb-kuldes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+}
+
+.gomb-torles {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.gomb-torles:hover {
+    background: #bdc3c7;
+}
+
+.kerdoiv-footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.kerdoiv-footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.kerdoiv-footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .kerdoiv-header {
+        padding: 30px 20px;
+    }
+
+    .kerdoiv-header h1 {
+        font-size: 1.8em;
+        padding: 5px 15px;
+    }
+
+    .kerdoiv-header h2 {
+        font-size: 1.1em;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .kerdoiv {
+        padding: 20px 15px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1em;
+        padding: 6px 14px;
+    }
+
+    .kerdes {
+        padding: 12px 15px;
+    }
+
+    .radio-csoport,
+    .checkbox-csoport {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .radio-csoport label,
+    .checkbox-csoport label {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .vissza-nav ul li {
+        display: block;
+    }
+
+    .vissza-nav ul li a {
+        border-bottom: 1px solid #ecf0f1;
+        padding: 12px 20px;
+    }
+
+    .kerdoiv-header h1 {
+        font-size: 1.5em;
+    }
+
+    .gombok {
+        flex-direction: column;
+    }
+
+    .gomb {
+        width: 100%;
+    }
+}

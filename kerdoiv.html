@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webprogramozás kurzus értékelő kérdőív - hallgatói visszajelzés gyűjtése.">
+    <meta name="keywords" content="webprogramozás, kérdőív, értékelés, kurzus, visszajelzés">
+    <meta name="author" content="DISEXN">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="kerdoiv.css">
+    <title>Kérdőív - Webprogramozás kurzus értékelése</title>
+</head>
+<body>
+
+    <header class="kerdoiv-header">
+        <h1>Webprogramozás kurzus</h1>
+        <h2>Hallgatói elégedettségi és fejlesztési kérdőív</h2>
+        <p class="bevezetes">
+            Kedves Hallgató! Az alábbi kérdőív kitöltésével segítheted a kurzus
+            következő félévi továbbfejlesztését. A kitöltés <strong>kb. 5 percet</strong>
+            vesz igénybe, és <em>anonim</em>.
+        </p>
+    </header>
+
+    <nav class="vissza-nav">
+        <ul>
+            <li><a href="fooldal.html">Főoldal</a></li>
+            <li><a href="kedvenc_versem.html">Kedvenc versem</a></li>
+            <li><a href="hobbi.html">Iskolám és hobbim</a></li>
+            <li><a href="kerdoiv.html" class="aktiv">Kérdőív</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="#" method="post" autocomplete="off" class="kerdoiv">
+
+            <fieldset>
+                <legend>A) Általános elégedettség</legend>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">1.</span>
+                        Mennyire vagy elégedett a Webprogramozás kurzussal összességében?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q1" value="1" required> 1 ⭐</label>
+                        <label><input type="radio" name="q1" value="2"> 2 ⭐⭐</label>
+                        <label><input type="radio" name="q1" value="3"> 3 ⭐⭐⭐</label>
+                        <label><input type="radio" name="q1" value="4"> 4 ⭐⭐⭐⭐</label>
+                        <label><input type="radio" name="q1" value="5"> 5 ⭐⭐⭐⭐⭐</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">2.</span>
+                        Hogyan értékeled a tananyag minőségét?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q2" value="1"> Nagyon rossz</label>
+                        <label><input type="radio" name="q2" value="2"> Rossz</label>
+                        <label><input type="radio" name="q2" value="3"> Közepes</label>
+                        <label><input type="radio" name="q2" value="4"> Jó</label>
+                        <label><input type="radio" name="q2" value="5"> Kiváló</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">3.</span>
+                        Hogyan értékeled az oktató (Madarász István) felkészültségét és előadásmódját?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q3" value="1"> Nagyon rossz</label>
+                        <label><input type="radio" name="q3" value="2"> Rossz</label>
+                        <label><input type="radio" name="q3" value="3"> Közepes</label>
+                        <label><input type="radio" name="q3" value="4"> Jó</label>
+                        <label><input type="radio" name="q3" value="5"> Kiváló</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">4.</span>
+                        Megfelelőnek tartottad a kurzus tempóját?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q4" value="lassu"> Túl lassú volt</label>
+                        <label><input type="radio" name="q4" value="megfelelo"> Megfelelő volt</label>
+                        <label><input type="radio" name="q4" value="gyors"> Túl gyors volt</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim" for="q5">
+                        <span class="szam">5.</span>
+                        Hova rangsorolnád ezt a kurzust az eddigi egyetemi tárgyaid között?
+                    </label>
+                    <select name="q5" id="q5">
+                        <option value="">-- Válassz --</option>
+                        <option value="top10">A legjobb 10%-ba</option>
+                        <option value="top25">A legjobb 25%-ba</option>
+                        <option value="kozepes">Az átlagba</option>
+                        <option value="alsofele">Az átlag alá</option>
+                        <option value="leggyengebb">A leggyengébbek közé</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>B) Tartalmi visszajelzés</legend>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">6.</span>
+                        Mely témakörök voltak számodra a leghasznosabbak? (Több is választható)
+                    </label>
+                    <div class="checkbox-csoport">
+                        <label><input type="checkbox" name="q6[]" value="html"> HTML alapok</label>
+                        <label><input type="checkbox" name="q6[]" value="css"> CSS alapok</label>
+                        <label><input type="checkbox" name="q6[]" value="reszponziv"> Reszponzív tervezés</label>
+                        <label><input type="checkbox" name="q6[]" value="flexbox"> Flexbox / Grid</label>
+                        <label><input type="checkbox" name="q6[]" value="bootstrap"> Bootstrap</label>
+                        <label><input type="checkbox" name="q6[]" value="urlapok"> Űrlapok</label>
+                        <label><input type="checkbox" name="q6[]" value="seo"> Keresőoptimalizáció</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">7.</span>
+                        Mennyit segített a Bootstrap keretrendszer megismerése a feladatok megoldásában?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q7" value="semmit"> Semmit</label>
+                        <label><input type="radio" name="q7" value="keveset"> Keveset</label>
+                        <label><input type="radio" name="q7" value="kozepesen"> Közepesen</label>
+                        <label><input type="radio" name="q7" value="sokat"> Sokat</label>
+                        <label><input type="radio" name="q7" value="nagyon-sokat"> Nagyon sokat</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">8.</span>
+                        Hogyan értékeled a tananyag mélységét?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q8" value="felszines"> Túl felszínes volt</label>
+                        <label><input type="radio" name="q8" value="megfelelo"> Megfelelő mélységű</label>
+                        <label><input type="radio" name="q8" value="tul-melyen"> Túl mélyen tárgyalt</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">9.</span>
+                        Mennyire voltak hasznosak a Moodle-felületen elérhető segédanyagok?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q9" value="1"> 1 - Egyáltalán nem</label>
+                        <label><input type="radio" name="q9" value="2"> 2</label>
+                        <label><input type="radio" name="q9" value="3"> 3</label>
+                        <label><input type="radio" name="q9" value="4"> 4</label>
+                        <label><input type="radio" name="q9" value="5"> 5 - Nagyon hasznosak</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">10.</span>
+                        Mennyire voltak világosak a vizsgakövetelmények?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q10" value="zavarosak"> Zavarosak voltak</label>
+                        <label><input type="radio" name="q10" value="reszben"> Részben világosak</label>
+                        <label><input type="radio" name="q10" value="vilagosak"> Teljesen világosak</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>C) Fejlesztési javaslatok</legend>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">11.</span>
+                        Mely témákra fordítanál több időt a kurzusban? (Több is választható)
+                    </label>
+                    <div class="checkbox-csoport">
+                        <label><input type="checkbox" name="q11[]" value="html-melyebben"> HTML mélyebb tárgyalása</label>
+                        <label><input type="checkbox" name="q11[]" value="css-haladok"> Haladó CSS témák (animáció, transform)</label>
+                        <label><input type="checkbox" name="q11[]" value="bootstrap-tobb"> Bootstrap több gyakorlattal</label>
+                        <label><input type="checkbox" name="q11[]" value="javascript"> JavaScript bevezető</label>
+                        <label><input type="checkbox" name="q11[]" value="git"> Git / GitHub használat</label>
+                        <label><input type="checkbox" name="q11[]" value="esettanulmany"> Komplex esettanulmányok</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim" for="q12">
+                        <span class="szam">12.</span>
+                        Milyen új témakört vennél fel a kurzusba?
+                    </label>
+                    <input type="text" name="q12" id="q12" maxlength="200"
+                           placeholder="Pl.: WordPress, kisebb AI eszközök, akadálymentesítés...">
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim" for="q13">
+                        <span class="szam">13.</span>
+                        Milyen részletes fejlesztési javaslataid vannak a kurzussal kapcsolatban?
+                    </label>
+                    <textarea name="q13" id="q13" rows="5" cols="50"
+                              placeholder="Itt írhatsz hosszabban a javaslataidról..."></textarea>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim">
+                        <span class="szam">14.</span>
+                        Ajánlanád-e ezt a kurzust egy hallgatótársadnak?
+                    </label>
+                    <div class="radio-csoport">
+                        <label><input type="radio" name="q14" value="igen"> Igen, határozottan</label>
+                        <label><input type="radio" name="q14" value="talan"> Talán</label>
+                        <label><input type="radio" name="q14" value="nem"> Nem ajánlanám</label>
+                    </div>
+                </div>
+
+                <div class="kerdes">
+                    <label class="kerdes-cim" for="q15">
+                        <span class="szam">15.</span>
+                        Egyéb megjegyzés, üzenet az oktatónak:
+                    </label>
+                    <textarea name="q15" id="q15" rows="4" cols="50"
+                              placeholder="Bármilyen kiegészítő gondolatod, dicséret vagy észrevétel..."></textarea>
+                </div>
+            </fieldset>
+
+            <div class="gombok">
+                <button type="reset" class="gomb gomb-torles">Mező-tartalom törlése</button>
+                <button type="submit" class="gomb gomb-kuldes">Kérdőív beküldése</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="kerdoiv-footer">
+        <p>
+            <small>
+                &copy; 2026 Gabor Baji &mdash;
+                Webprogramozás kérdőív &mdash;
+                <a href="fooldal.html">Vissza a főoldalra</a>
+            </small>
+        </p>
+    </footer>
+
+</body>
+</html>
